@@ -16,6 +16,78 @@
 
     <!-- FORMULAIRE DE RESERVATION -->
     <!-- au cas ou t'aurais pas compris place ton fromulaire ici. A+ Manfred -->
+    <form id="formHotel" action="https://kode.ch/getpost/" method="post">
+        <ul>
+            <li>
+                <label for="lis_hotel">Hôtel</label>
+                <select id="lis_hotel" name="lis_hotel">
+                    <option value="0" selected>-- Sélectionnez un hôtel --</option>
+                    <option value="City">Hôtel City</option>
+                    <option value="National">Hôtel National </option>
+                    <option value="Midi">Hôtel Le Midi</option>
+                    <option value="Victoria">Hôtel Victoria</option>
+                </select>
+            </li>
+            <li>
+                <label for="txt_nbrChambre">Nombre de chambre : </label>
+                <input id="txt_nbrChambre" name="txt_nbrChambre" type="text" value="">
+            </li>
+            <li>
+                <fieldset>
+                    <legend>Type de chambre : </legend>
+                    <label>
+                        <input type="radio" name="opt_type_chambre" value="standard simple">
+                        <span>Standard simple</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="opt_type_chambre" value="standard double">
+                        <span>Standard double</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="opt_type_chambre" value="supérieure simple">
+                        <span>Supérieure simple</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="opt_type_chambre" value="supérieure double">
+                        <span>Supérieure double</span>
+                    </label>
+                </fieldset>
+            </li>
+            <li>
+                <fieldset>
+                    <legend>Options disponibles : </legend>
+                    <div>
+                        <input type="checkbox" name="chk_options[]" id="petit_dejeuner" value="Petit déjeuner">
+                        <label for="petit_dejeuner">Petit déjeuner</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="chk_options[]" id="tv" value="TV">
+                        <label for="tv">TV</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="chk_options[]" id="journaux" value="Journaux">
+                        <label for="journaux">Journaux</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="chk_options[]" id="ordinateurs" value="Ordinateurs">
+                        <label for="ordinateurs">Ordinateurs</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="chk_options[]" id="acces_wifi" value="Accès Wifi">
+                        <label for="acces_wifi">Accès Wifi</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="chk_options[]" id="animaux_de_compagnie" value="Animaux de compagnie">
+                        <label for="animaux_de_compagnie">Animaux de compagnie</label>
+                    </div>
+                </fieldset>
+            </li>
+            <li>
+                <button type="reset">Effacer</button>
+                <button type="submit">Réserver</button>
+            </li>
+        </ul>
+    </form>
 </div>
 
 <!-- RESERVATION -->
